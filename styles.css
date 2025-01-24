@@ -1,0 +1,267 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3e9dff; /* DodgerBlue background */
+    z-index: -1;
+}
+
+.header {
+    background-color: #003cb0; /* PersianBlue */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    z-index: 1;
+}
+
+.logo {
+    height: 300px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-register {
+    background-color: white; 
+    color: #003cb0; /* Text color PersianBlue */
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-register:hover {
+    background-color: #3e9dff; /* DodgerBlue on hover */
+    color: aliceblue;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff;
+    height: 200px;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 18px;
+}
+
+/* Register Button Section */
+.find-program {
+    text-align: center;
+    padding: 40px;
+}
+
+.find-program .btn {
+    background-color: #003cb0; /* PersianBlue */
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.find-program .btn:hover {
+    background-color: #3e9dff; /* DodgerBlue on hover */
+    color: #ffffff;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.category-item {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+/* .category-item.free-course {
+
+    background-color: rgb(136, 37, 37);
+    padding: 20px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: transform 0.3s;
+} */
+
+.category-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.category-item:hover {
+    transform: scale(1.10);
+    background-color: #003cb0; /* PersianBlue on hover */
+    /* text-decoration: none; */
+}
+
+.category-item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.categories .category-item a:hover {
+    text-decoration: none; 
+  }
+  
+  .categories .category-item a:hover img {
+    filter: brightness(0) saturate(100) invert(100%); /* change image color to white */
+  }
+  
+  .categories .category-item a:hover h3 {
+    color: white; /* change text color to white */
+  }
+
+
+/* Footer Buttons */
+.footer-buttons {
+    background-color: #003cb0; /* PersianBlue for footer */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.footer-buttons button {
+    background-color: #003cb0; /* PersianBlue */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-buttons button:hover {
+    background-color: #3e9dff; /* DodgerBlue on hover */
+}
+
+/* Social Media */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+.social-media img {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+
+}
+
+.social-media img {
+    filter: invert(55%) sepia(24%) saturate(1431%) hue-rotate(174deg) brightness(101%) contrast(93%);
+  }
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+.footer-buttons {
+    display: flex; /* make the container a flex container */
+    justify-content: space-between; /* space out the elements horizontally */
+    align-items: center; /* vertically center the elements */
+  }
+  
+  .social-media {
+    display: flex; /* make the social media container a flex container */
+  }
+  
+  .social-media a {
+    margin-right: 20px; /* add some space between the social media icons */
+  }
+  
+  .footer-nav {
+    display: flex; /* make the footer nav container a flex container */
+  }
+  
+  .footer-nav button {
+    margin-right: 20px; /* add some space between the footer nav buttons */
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+    }
+
+    .footer-buttons button {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+}
+
+
